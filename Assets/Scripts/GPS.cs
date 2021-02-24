@@ -14,8 +14,6 @@ public class GPS : MonoBehaviour
 
     public void Start()
     {
-        StartCoroutine("startGPS");
-        StartCoroutine("gpsCheckerCount");
         statusText.fontSize = 25;
         latitudeText.fontSize = 23;
         longitudeText.fontSize = 23;
@@ -100,6 +98,8 @@ public class GPS : MonoBehaviour
 
     public void Update()
     {
+        StartCoroutine("startGPS");
+        StartCoroutine("gpsCheckerCount");
         longitudeText.text = $"Longitude: {Input.location.lastData.longitude}";
         latitudeText.text = $"Latitude: {Input.location.lastData.latitude}";
     }
