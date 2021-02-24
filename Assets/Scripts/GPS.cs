@@ -10,7 +10,7 @@ public class GPS : MonoBehaviour
     public Text latitudeText;
     public Text longitudeText;
     public Text statusText;
-    int waitTime;
+    int waitTime = 20;
 
     public void Start()
     {
