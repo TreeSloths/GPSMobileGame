@@ -7,8 +7,6 @@ using UnityEngine.UI;
 
 public class GPS : MonoBehaviour
 {
-    public float latitude;
-    public float longitude;
     public Text latitudeText;
     public Text longitudeText;
     public Text statusText;
@@ -26,11 +24,8 @@ public class GPS : MonoBehaviour
 
     private IEnumerable gpsCheckerCount()
     {
-        if (Input.location.status == LocationServiceStatus.Running)
-        {
-            GpsChecker();
-            yield return new WaitForSeconds(5);
-        }
+        GpsChecker();
+        yield return new WaitForSeconds(5);
     }
 
     private void GpsChecker()
@@ -48,6 +43,10 @@ public class GPS : MonoBehaviour
         else if (Input.location.status == LocationServiceStatus.Stopped)
         {
             statusText.text = $"GPS has stopped running";
+        }
+        else if (!Input.location.isEnabledByUser)
+        {
+            statusText.text = $"GPS is not enabled by user";
         }
     }
 
@@ -101,9 +100,7 @@ public class GPS : MonoBehaviour
 
     public void Update()
     {
-        latitude = Input.location.lastData.latitude;
-        longitude = Input.location.lastData.longitude;
-        longitudeText.text = $"Longitude; {longitude}";
-        latitudeText.text = $"Latitude: {latitude}";
+        longitudeText.text = $"Longitude: {Input.location.lastData.longitude}";
+        latitudeText.text = $"Latitude: {Input.location.lastData.latitude}";
     }
 }
