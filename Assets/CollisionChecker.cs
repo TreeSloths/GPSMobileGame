@@ -9,7 +9,7 @@ public class CollisionChecker : MonoBehaviour
     {
         
     }
-
+    
     public void AddBase(GameObject Base)
     {
         RenderedBases.Add(Base);

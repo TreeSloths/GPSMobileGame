@@ -20,15 +20,15 @@ public class Collisions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (var Base in RenderedBases)
+        /*foreach (var Base in RenderedBases)
         {
             Debug.Log("Hello");
             
             //10 below is a magic number, should be fixed
             if (Vector3.Distance(transform.position, Base.transform.position) < 10)
             {
-                Debug.Log("Inside base");
+                base.GetComponent<BaseScript>().StartTakeOver(GetComponent<PlayerScript>().username);
             }    
-        }
+        }*/
     }
 }
