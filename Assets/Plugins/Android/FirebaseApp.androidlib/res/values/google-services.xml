@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="gcm_defaultSenderId" translatable="false">580107867610</string>
+  <string name="google_storage_bucket" translatable="false">gpsmobileproject.appspot.com</string>
+  <string name="project_id" translatable="false">gpsmobileproject</string>
+  <string name="google_api_key" translatable="false">AIzaSyB4TSV-C8WkBXSWlb2FVZOgkyOHaeQ_8GY</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB4TSV-C8WkBXSWlb2FVZOgkyOHaeQ_8GY</string>
+  <string name="google_app_id" translatable="false">1:580107867610:android:b7c30ca3fb3fff4a115ce3</string>
+  <string name="default_web_client_id" translatable="false">580107867610-kg54oqhpuuktrpvncfj0uf0qa7oo5p79.apps.googleusercontent.com</string>
+</resources>
