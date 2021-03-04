@@ -12,11 +12,13 @@ public class playerMovement : MonoBehaviour
         {
             transform.position += transform.forward * 0.1f;
         }
+        
         if (Input.GetKey("s"))
         {
             transform.position -= transform.forward * 0.1f;
         }
         if (Input.GetKey("a"))
+            
         {
             transform.position -= transform.right * 0.1f;
         }

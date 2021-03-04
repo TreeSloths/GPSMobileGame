@@ -421,6 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   username: 
+  gold: 100
 --- !u!1001 &1863082987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -650,6 +651,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Base
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636739160224214119, guid: ef157394e093e9844ad36ef5f7c93756,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636739160224214119, guid: ef157394e093e9844ad36ef5f7c93756,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.6942969
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636739160224214119, guid: ef157394e093e9844ad36ef5f7c93756,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.6841848
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef157394e093e9844ad36ef5f7c93756, type: 3}

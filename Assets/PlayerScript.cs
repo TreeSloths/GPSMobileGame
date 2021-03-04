@@ -7,6 +7,7 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     private List<GameObject> RenderedBases;
     public string username;
+    public int gold = 100;
     void Start()
     {
         //magic string, needs to be fetched from server after login
