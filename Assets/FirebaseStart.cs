@@ -8,14 +8,16 @@ public class FirebaseStart : MonoBehaviour
 {
     public FirebaseApp FireBaseApp { get; set; }
 
-    private void Start()
+    public void Update()
     {
+        Debug.Log("Script is runned");
         Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
         {
             var dependencyStatus = task.Result;
             if (dependencyStatus == Firebase.DependencyStatus.Available)
             {
                 FireBaseApp = FirebaseApp.DefaultInstance;
+                Debug.Log("Dependency Avaible");
             }
 
             else
